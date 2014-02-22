@@ -1,0 +1,8 @@
+div.user.module-inner(id='#{user._id}')
+ a(href='/#{user.url}')
+  img(src="#{user.avatar}")
+  div.user-text
+   p 
+    strong #{user.fullname}
+   p.muted #{user.username}
+  div.clear

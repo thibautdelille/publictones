@@ -1,0 +1,18 @@
+div.module.img-rounded.users
+ div.module-title
+  i.icon-group
+  strong  #{title_list}
+ div.user.module-inner
+  if(users!=undefined) 
+   - each user,index in users 
+     include user
+  div.clear
+ script#usersearch(type='text/html')
+  - var user = {};
+  - user._id = '{{_id}}';
+  - user.type = 'search';
+  - user.fullname = '{{fullname}}';
+  - user.username = '{{username}}';
+  - user.url = '{{url}}';
+  - user.avatar = '{{avatar}}';
+    include usersearch

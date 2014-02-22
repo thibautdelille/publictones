@@ -1,0 +1,17 @@
+{
+  "session" : {
+    "secret" : "yourbestsecret"
+  },
+  "app": {
+    "port": 3333
+  },
+  "theme": {
+    "name" : "default"
+  },
+  "message": {
+    "valid": true,
+    "login_invalid": "invalid e-mail address or password",
+    "signup_error": "Ooops something when wrong!",
+    "error_create_station": "An error has occurred, we couldn't create your station. Please try again"
+  }
+}

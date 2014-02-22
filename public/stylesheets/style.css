@@ -1,0 +1,188 @@
+body {
+	padding:0;
+	margin:0;
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background:  #EFEFEF;
+
+}
+ul{padding:0;margin:0;}
+p{margin-bottom:5px;}
+.clear{clear:both;}
+.float-right{float:right;}
+.float-left{float:left;}
+.border-bottom {border-bottom:1px solid #EFEFEF}
+.modal {width:700px;margin-left: -350px;}
+.modal .help-inline {width:260px;}
+/* Navigation*/
+body > .navbar .brand {
+padding-right: 0;
+padding-left: 0;
+margin-left: 20px;
+font-weight: bold;
+color: #000;
+text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+transition: all .2s linear;
+}
+/* Index */
+.front-card {top: 50%;height: 328px;position:absolute;margin-top:-174px;left: 50%;margin-left:-320px;width: 640px;}
+.front-welcome-text {margin-bottom: 10px;}
+.front-welcome-text h3{line-height: 10px}
+.front-signup-text {padding:10px;margin:0;border-bottom:1px solid #EFEFEF}
+.front-signin, .front-signup {background: #FFFFFF;margin-bottom:10px;}
+.front-container-full-signup .front-welcome-text {padding: 0;bottom: 50%;}
+
+.index .front-card form {padding:10px;margin:0;}
+.index .front-card input[type="text"],
+.index .front-card input[type="password"]{width:266px;}
+.index .front-signin input.password{width:192px; margin-right:5px;}
+
+.front-card .form-horizontal .control-group {margin-bottom: 5px;}
+.front-card .form-horizontal .controls {margin-left: 0px;}
+
+.social-connect{margin-left:10px;margin-bottom:5px;margin-top: 14px;}
+a.sb{margin-bottom:5px;}
+a.sb.sb-small i{ width: auto; height: auto; }
+.icon-twitter{ font-size: 15px; padding: 5px;}
+.icon-facebook{ font-size: 15px; padding: 5px 10px;}
+.social-connect a:hover{text-decoration: none }
+
+/* Common */
+.login.container,
+.profile.container,
+.station.container {margin-top:50px;position:relative;}
+/* Login */
+.login .alert{width:300px;margin-bottom:0;}
+.help-inline .error,
+.help-inline .success,
+.help-inline .required,
+.help-inline .exist{display:none;}
+.help-inline .error,
+.help-inline .required,
+.help-inline .exist{color:#c33}
+.help-inline .success{color:#390}
+/*
+.signup, .login{margin-top:50px;padding:50px 0;}
+.login input, 
+.signup input{margin-right:10px;}
+
+.login .alert{width:167px;}
+
+*/
+
+.home.container{margin-top:60px;}
+.home h3{margin:0;}
+.home input{font-size: 25px;height: auto;line-height: 30px;padding: 5px 15px;}
+.home form {margin-bottom: 0}
+
+/* homepage */
+.nav-stacked > li {cursor: pointer;}
+.nav-stacked > li > a {	background-color: #fff;}
+.nav-stacked > li > a > small.text-right{float: right;color: #999;}
+
+
+/* profile page*/
+.span12 {width:930px;margin-left:5px !important;}
+.hero-img {height:250px;overflow:hidden;}
+.header .module-inner{position:relative;}
+.header .avatar{position:absolute;top:-65px;left:10px}
+.header h3{line-height:10px;margin-left:110px;float:left;}
+.header .user-infos{border-top:1px solid #EFEFEF;}
+
+.float-right{float:right;}
+
+.nav-list > li > a > .icon-chevron-right {float: right;margin-top: 0px;margin-right: -6px;opacity: .25;}
+.nav-list > li > a {color: #121212;	padding: 10px 15px;border-bottom:1px solid #EFEFEF;cursor: pointer}
+.nav-list > li.active > a,
+.nav-list > li.active > a:hover {background-color: #3a87ad;	color: #fff;cursor: default}
+
+.nav-list > li.active > a  > .icon-chevron-right {opacity: 1;}
+.nav-list > li.active > a  > .badge {color: #3a87ad;background:#fff;}
+.nav-list > li.last > a {border-bottom:none;}
+.profile-sidenav strong{margin-left:10px;}
+
+
+
+.module-title .btn-small.float-right{margin-top:-5px;margin-right:-5px;}
+.module-title .icon-chevron-down.float-right,
+.module-title .icon-chevron-up.float-right{
+	padding: 12px;
+	border-left: 1px solid #efefef;
+	margin-top: -10px;
+	margin-right: -10px;
+	margin-left: 15px;
+}
+
+.item-station {position:relative;border-bottom:1px solid #EFEFEF}
+.item-station img {float:left;width:65px;height:auto;}
+.item-station .btn {position:absolute; bottom:10px;right:10px;}
+.item-station a {cursor:pointer;}
+
+.profile .playlist,
+.profile .likes,
+.profile .users {display:none;}
+.profile .list-search .user{border-bottom:1px solid #EFEFEF}
+.profile .list-search .user img {float:left;margin-right:10px;width:80px;height:80px;}
+.profile .list-search .user:hover{background-color:#EFEFEF;}
+.profile .list-search .user a:hover {text-decoration: none}
+.profile .list-search .user a:hover p{color:#0088cc;}
+.profile .list-search .user a:hover p.muted{color:#999999;}
+.profile .connected-user .avatar {
+float: left;
+width: 65px;
+height: auto;
+}
+/* station page*/
+
+[class*="span"] {margin-left:10px;}
+
+.left-column{margin-left:5px;}
+.navbar .search-query{margin-left:137px;}
+.navbar {z-index:1042;}
+
+.module {background-color:#ffffff;margin-top:10px;overflow: hidden}
+.module-inner {padding:10px;}
+.user-info img {float:left;margin-right:10px;}
+.user-info-text {margin-left:75px;}
+
+.module-title{padding:10px;margin:0;border-bottom:1px solid #EFEFEF}
+
+.connected-user{cursor:pointer;margin-bottom:5px;margin-right:5px;float:left;}
+
+textarea.comment{ 
+height:50px; 
+max-height:50px; 
+width:288px; 
+max-width:288px;
+padding:10px;
+margin:0px;
+border-top:none;
+border-left:none;
+border-right:none;
+border-bottom:1px solid #EFEFEF;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
+.message {margin-bottom:10px;}
+.message img{float:left;}
+.message .message-text{margin-left:50px;}
+.message.youspeak img{float:right;}
+.message.youspeak .message-text{margin-right:50px;margin-left:0px; text-align:right;}
+
+#ytapiplayer {height:360px; background-color:#000000;}
+.inner-player{width:100%; height:40px;color:#efefef; text-align:center;padding:160px 0;}
+
+.tone {position:relative;border-bottom:1px solid #EFEFEF;cursor:pointer;}
+.tone img {float:left;width:120px;height:auto;}
+.tone .tone-text {margin-left:130px;}
+.tone .btn-wrapper {position:absolute; bottom:10px;right:10px;}
+.tone .btn {float:right;margin-left:5px;}
+.tone .unlike{color: #efefef;}
+.tone:hover .unlike{color: #ff3535;}
+.tone .btn-like{color: #da4f49;}
+
+.list-search {position:absolute;left:240px;top:0px;z-index:1041;}
+.list-search .module{margin-bottom: 20px;-moz-box-shadow: 1px 1px 6px #000;-webkit-box-shadow: 1px 1px 6px #000;box-shadow: 1px 1px 6px #000;}
+

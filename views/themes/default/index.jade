@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  script(type='text/javascript', src='/javascripts/login.js')
+  script(type='text/javascript', src='/javascripts/index.js')
+  include nav_nosignin
+  div.container.index
+    div.front-card
+     div.front-welcome-text.span8
+      h3 PublicTones
+      p listen music with your friends
+     div.front-signin.img-rounded.span4
+      include signin_form
+      include connect_social
+     div.front-signup.img-rounded.span4
+      p.front-signup-text
+       strong New to Tones?
+       |  Sign up
+      include signup_form

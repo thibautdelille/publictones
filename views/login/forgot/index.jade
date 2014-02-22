@@ -1,0 +1,42 @@
+extends ../../../layouts/default
+
+block nav
+  include ../../nav/nav_nosignin
+
+block content
+  div.container.login
+    div.span12
+     div.module.img-rounded.front-signin
+      form(action='/login/forgot/', method='post').form-horizontal.signup.module-inner
+       div.control-group
+        div.controls
+         h3 #{title}
+         if (message!='')
+          div.alert.alert-warning
+           button.close(type="button", data-dismiss="alert") × 
+           | #{message}
+       div.control-group.email-group
+        label.control-label(for="email") Email address
+        div.controls
+         input(type="text", name="email", value="#{email}").email
+         small.help-inline 
+          span What’s your email address?
+          span.error 
+           i.icon-remove
+           |  Doesn't look like a valid email.
+          span.required 
+           i.icon-remove
+           |  An email is required!
+          span.exist 
+           i.icon-remove
+           |  This email is not registered. Want to 
+           a(href='/signup') signup?
+          span.success 
+           i.icon-ok
+           |  We will email you a link to reset your password.
+       div.control-group
+        div.controls
+         button(type='submit').btn.btn-large.btn-warning Send me my password
+
+block feet
+  script(type='text/javascript', src='/javascripts/forgot.js')

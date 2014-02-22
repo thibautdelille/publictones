@@ -1,0 +1,6 @@
+div.connected-user(id="#{user._id}")
+ a(href="/#{user.url}")
+  if(layout=="profile")
+   img(src="#{user.avatar}", class="avatar", data-toggle="tooltip", data-original-title="#{user.username}")
+  if(layout=="station")
+   img(src="#{user.avatar}", width="40px", class="avatar img-rounded", data-toggle="tooltip", data-original-title="#{user.username}")

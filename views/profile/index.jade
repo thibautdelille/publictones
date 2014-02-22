@@ -1,0 +1,45 @@
+extends ../../layouts/default
+
+block nav
+  include ../nav/index
+
+block content
+  div.container.profile
+   div.list-search.span6
+   div.span12.header
+    include module/header
+   div.span3.left-column
+    include module/leftnav
+   div.span9
+    include module/stations
+    if(stationsWithFriends.length>0)
+     include module/stationswithfriends
+    - var tones = user_profile.tones
+    - var title_list = "Tones played"
+    - var layout = "profile"
+     include ../tone/list
+    - var tones = user_profile.likes
+    - var title_list = "Tones Liked"
+    - var layout = "profile"
+     include ../tone/listlike
+    if(user_profile.request.length>0)
+     - var users = user_profile.request
+     - var title_list = "Friend Request"
+     - var layout = "profile"
+      include ../user/list
+    if(user_profile.pending.length>0)
+     - var users = user_profile.pending
+     - var title_list = "Pending Request"
+     - var layout = "profile"
+      include ../user/list
+    - var users = user_profile.friends
+    - var title_list = "Friends"
+    - var layout = "profile"
+     include ../user/list
+  include ../station/create
+
+block feet
+  script(type='text/javascript', src='/javascripts/modal_createstation.js')
+  script(type='text/javascript', src='/vendors/ICanHaz/ICanHaz.min.js')
+  script(type='text/javascript', src='/javascripts/tones.searchuser.js')
+  script(type='text/javascript', src='/javascripts/profile.js')
