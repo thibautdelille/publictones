@@ -5,7 +5,7 @@ Publictones allow anyone to watch a youtube playlist with your friends online an
 * [SocketIO](http://socket.io/)
 * [MongoDB](http://www.mongodb.org/)
 
-you can use the application on [www.publictones.com](http://www.publictones.com)
+You can use the application on [www.publictones.com](http://www.publictones.com)
 
 This projects is ready to be deploy on [openshift](https://openshift.redhat.com/)
 
