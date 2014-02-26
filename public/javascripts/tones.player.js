@@ -8,6 +8,7 @@ function onytplayerStateChange(newState) {
 }
 
 function onYouTubePlayerReady(playerId) {
+  console.log('onYouTubePlayerReady:'+playerId);
   isReady = true;
   onPlayerReady(playerId);
 }
@@ -19,9 +20,10 @@ function yt_loadVideo(playerId, videoId){
 }
 
 function yt_playVideo(playerId) {
+  console.log('yt_playVideo()', playerId);
   ytplayer = document.getElementById(playerId);
   ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
-  ytplayer.mute();
+  //ytplayer.mute();
   ytplayer.playVideo();
 }
 
@@ -36,6 +38,8 @@ var currentVideoId;
 (function( $ ){
 
   function playerReady(playerId){
+
+    console.log('playerReady:'+playerId);
     $('#ytapiplayer').tplayer('playerReady');
   }
   function playerEnded(){
@@ -72,6 +76,8 @@ var currentVideoId;
     },
     playerReady : function(){
       // this.mute();
+
+      console.log('#ytapiplayer playerReady '+$(this).attr('id'));
       yt_playVideo($(this).attr('id'));
       isPlaying = true;
     },
@@ -103,7 +109,8 @@ var currentVideoId;
     },
 
     playVideo : function(idVideo){
-      
+      console.log('playVideo:'+idVideo);
+
       var options = $(this).data('options.tplayer');
 
       currentVideoId = idVideo;
@@ -117,7 +124,7 @@ var currentVideoId;
         yt_loadVideo($(this).attr('id'), idVideo);
       }else{
         var params = { allowScriptAccess: "always"};
-        var atts = { id: options.playerapiid, class:"img-rounded"};
+        var atts = { id: options.playerapiid};
         swfobject.embedSWF(options.url+idVideo+"?controls="+options.controls+"&showinfo="+options.showinfo+"&enablejsapi="+options.enablejsapi+"&playerapiid="+options.playerapiid+"&version="+options.version,
                                options.playerapiid, options.width, options.height, "8", null, null, params, atts);
       }

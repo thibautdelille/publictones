@@ -4,9 +4,9 @@
       
       var self = this;
       nbStar = $('.user-info .icon-star').length;
-      if(nbStar==0){
+      /*if(nbStar==0){
         $('.btn', this).addClass('disabled');
-      }else{
+      }else{*/
       $('.btn', this).bind('click', function(){
 
         var data = {
@@ -20,7 +20,7 @@
         addItem(data);
       });
         
-      }
+      //}
     }
   }
 
